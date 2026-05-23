@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Álbum de Memórias</title>
+    <style>
+        /* Configurações gerais da página (Cores e Fonte) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Cor de fundo suave */
+            color: #333333; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho do site */
+        header {
+            background-color: #2c3e50; /* Azul escuro */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-style: italic;
+            color: #bdc3c7;
+        }
+
+        /* Container principal das fotos */
+        .album-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        /* Cartão de cada foto */
+        .foto-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        /* Efeito ao passar o mouse na foto */
+        .foto-card:hover {
+            transform: scale(1.03);
+        }
+
+        /* Estilização da imagem */
+        .foto-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Ajusta a imagem sem distorcer */
+        }
+
+        /* Texto abaixo da foto */
+        .foto-legenda {
+            padding: 15px;
+        }
+
+        .foto-legenda h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+
+        .foto-legenda p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666666;
+            line-height: 1.4;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> Fotografias do Rock in Rio</h1>
+        <p></p>
+    </header>
+
+    <main class="album-container">
+
+        <div class="foto-card">
+            <img src="imagens/foto1.jpg" alt="Praia paradisíaca">
+            <div class="foto-legenda">
+                <h3>Loira Roqueira</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="imagens/queima de fogos.jpg" alt="Montanhas">
+            <div class="foto-legenda">
+                <h3>Queima de fogos</h3>
+                <p>.</p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="imagens/Familia do rock.jpg" alt="Parque no Outono">
+            <div class="foto-legenda">
+                <h3>Familia do Rock</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="foto-card">
+            <img src="imagens/post malone.jpg" alt="Cidade à noite">
+            <div class="foto-legenda">
+                <h3>Post Malone</h3>
+                <p></p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Alex  </p>
+    </footer>
+
+</body>
+</html>
